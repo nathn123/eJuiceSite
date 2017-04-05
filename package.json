@@ -4,5 +4,11 @@
     "jQuery": "^1.7.4",
     "mongoose": "^4.8.1",
     "node": "^0.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "webpack": "^2.2.1"
   }
 }

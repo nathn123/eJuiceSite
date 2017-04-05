@@ -3,27 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <title>Nathan's EJuice Calculator</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="App.js"></script>
 </head>
 
 <body>
+    <nav>
+        <ol>
+            <li id="conc">Find By Concentrates</li>
+            <li id="flav">Find By Flavour</li>
+            <li id="reci">Find By Recipe Name</li>
+            <li id="calc">Calculator</li>>   
+        </ol>
+    </nav>
+    <!--find by conventrate name-->
     <form id="find_by_conc" action="submit">
         Concentrates:
         <input id="find_by_conc_in" type="text"></input>
         <button> Search </button>
     </form>
+    <!--find by recipe name-->
     <form id="find_by_reci" action="submit">
         Recipe:
         <input id="find_by_reci_in" type="text"></input>
         <button> Search </button>
     </form>
+    <!--find by recipe flavour-->
     <form id="find_by_flav" action="submit">
         Flavour:
         <input id="find_by_flav_in" type="text"></input>
         <button> Search </button>
     </form>
+    <table id="Search Response">
+        <tr id="recipe Response", ng-href="link">
+            <td>Recipe Name</td>
+            <td>Creator</td>
+            <td>Popularity</td>
+        </tr>
+    </table>
 
     <table id="Calculator">
-        <tr></tr>
+        <tr>
+            <td>PG:</td>
+            <td id = "Calculator.PG">50%</td>
+            <td>25ml</td>
+        </tr>
+        <tr>
+            <td>VG:</td>
+            <td id = "Calculator.VG">50%</td>
+            <td>25ml</td>
+        </tr>
+        <tr>
+            <td style="hidden" id = "Calculator.Flav.Name">PG:</td>
+            <td style="hidden" id = "Calculator.Flav.Perc">50%</td>
+            <td style="hidden" id = "Calculator.Flav.ML">25ml</td>
+        </tr>
     </table>
 </body>
 
