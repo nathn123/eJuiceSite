@@ -4,24 +4,23 @@ export default class Flavrow extends React.Component {
     render() {
         return (
             <tr>
-                <td>Flavour</td>
                 <td>
-                    {flav.name}
+                    Flavour
+                </td>
+                <td>
+                    {this.props.name}
                 </td>
                 <td>
                     Base
                 </td>
                 <td>
-                    <label class="switch">
-                        <input type="checkbox"/>
-                        <div class="slider round"></div>
-                    </label>
+                    {this.props.base}
                 </td>
                 <td>
                     Percentage Used
                 </td>
                 <td>
-                    <input type="number" value={flav.perc}/>
+                    <input type="number" value={this.props.perc}/>
                 </td>
             </tr>
         );
